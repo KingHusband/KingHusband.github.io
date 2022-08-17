@@ -1,0 +1,331 @@
+body {
+    color: #ddd;
+    background: #000;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.header {
+    background: #05a;
+    padding: 15px 20px;
+    border-bottom: 2px solid #000;
+    width: 100%;
+}
+
+.headerName {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.cv-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cv  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #05a4;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 900px;
+    padding: 30px 0 0 0;
+    background-color: transparent;
+}
+
+.profile__img-container {
+    justify-self: start;
+}
+
+.profile__img {
+    width: 200px;
+    height: 236px;
+    margin: 30px 50px 30px 100px;
+    background-color: #000;
+    background-image: url(Multimedia/Img/Foto_Curriculum-01.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    outline: 3px solid #05a;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 15px 15px #0009;
+    opacity: 0.8;
+    filter: saturate(0.9) brightness(1.2);
+}
+
+.profile__description-container {
+    justify-self: end;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.profile__description, .profile__name {
+    width: 400px;
+    margin: 30px 50px;
+    text-align: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.profile__name {
+    text-transform: uppercase;
+    font-size: 40px;
+    letter-spacing: 1px;
+    align-self: end;
+}
+
+.horizontalDivider {
+    width: 840px;
+    height: 30px;
+    margin: 0 auto;
+    border-bottom: 1px solid #888;
+}
+
+.formationSkillExp-container {
+    display: grid;
+    grid-template-columns: 1fr 1px 1fr;
+    justify-content: center;
+    justify-items: center;
+    width: 900px;
+    padding: 20px 30px 30px;
+    background-color: transparent;
+}
+
+.formation-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    padding: 10px 0 0 0;
+}
+
+.formation {
+    width: 400px;
+    padding: 20px 20px;
+    align-self: start;
+}
+
+.formation-title-container, .exp-title-container, .skill-title-container {
+    background: #e16c05d8;
+    margin: 0 0 10px 0;
+    display: flex;
+    width: 350px;
+    height: 75px;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-title-container {
+    margin-top: 10px;
+}
+
+.formation-title, .exp-title, .skill-title {
+    text-transform: uppercase;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.exp-title, .skill-title {
+    align-self: center;
+}
+
+.formationSection, .expSection, .skillSection {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0 15px 0;
+}
+
+.expSection, .skillSection {
+    align-items: flex-end;
+} 
+
+.formationTitles, .expTitles, .skillTitles {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.formationContents {
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    align-self: start;
+}
+
+.verticalDivider {
+    width: 1px;
+    height: 100%;
+    background: #888;
+}
+
+.expSkill-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px;
+    padding: 10px 0 0 0;
+}
+
+.exp, .skill {
+    padding: 20px 20px;
+}
+
+.exp-container, .skill-container {
+    align-self: end;
+}
+
+.expContents, .skillContents {
+    font-size: 16px;
+    margin: 0 0 5px 0;
+    align-self: end;
+    text-align: right;
+    max-width: 300px;
+}
+
+.footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    background: #05a;
+    padding: 15px 20px;
+    border-top: 2px solid #000;
+}
+
+.footerNumber, .footerDirection, .footerEmail {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footerNumber {
+    text-align: center;
+}
+
+.footerDirection {
+    text-align: start;
+}
+
+.footerEmail {
+    text-align: end;
+}
+
+.footerCopyright {
+    padding: 15px 0 0 0;
+    grid-column: 2 / 3;
+    text-align: center;
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        max-width: 450px;
+    }
+
+    .cv-container {
+        max-width: 450px;
+    }
+
+    .cv {
+        max-width: 450px;
+    }
+
+    .profile-container {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        width: 100%;
+    }
+
+    .profile__img-container {
+        justify-self: center;
+    }
+
+    .profile__img {
+        margin: 30px auto;
+    }
+
+    .profile__description-container {
+        max-width: 450px;
+        justify-self: center;
+        justify-items: center;
+    }
+
+    .profile__description, .profile__name {
+        width: 100%;
+        max-width: 400px;
+        padding: 20px 8px;
+        margin: 0;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .profile__name {
+        font-size: 30px;
+        text-shadow: 5px 5px #000;
+    }
+
+    .profile__description {
+        font-size: 20px;
+    }
+
+    .horizontalDivider {
+        width: 90%;
+        height: 30px;
+    }
+
+    .verticalDivider {
+        display: none;
+    }
+
+    .formationSkillExp-container {
+        width: 100%;
+        max-width: 450px;
+        grid-template-columns: 1fr;
+    }
+
+    .formation-title-container, .exp-title-container, .skill-title-container {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .formation {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .footer {
+        max-width: 450px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        grid-auto-flow: column;
+        padding: 0;
+    }
+
+    .footerDirection {
+        padding: 20px 0 15px 0;
+    }
+
+    .footerNumber, .footerDirection, .footerEmail {
+        text-align: center;
+    }
+
+    .footerCopyright {
+        padding: 15px 0;
+        grid-column: auto;
+        background: #039;
+    }
+}
