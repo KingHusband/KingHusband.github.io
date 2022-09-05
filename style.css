@@ -299,11 +299,17 @@ body {
     .formation-title-container, .exp-title-container, .skill-title-container {
         width: 100%;
         max-width: 450px;
+        margin: 0;
+        padding: 0 4px;
     }
 
     .formation {
         width: 100%;
         max-width: 450px;
+    }
+
+    .expSkill-container {
+        min-width: auto;
     }
 
     .skillTitles:first-child, .expTitles:first-child {
