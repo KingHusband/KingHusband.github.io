@@ -1,9 +1,19 @@
-let hideText_Icon = document.getElementById('hideText_Icon');
+let hideTextWs_Icon = document.getElementById('hideTextWs_Icon');
 
-let hideText = document.getElementById('hideText');
+let hideTextWs = document.getElementById('hideTextWs');
 
-hideText_Icon.addEventListener('click', toggleText);
+hideTextWs_Icon.addEventListener('click', toggleWsText);
 
-function toggleText() {
-    hideText.classList.toggle('Show');
+function toggleWsText() {
+    hideTextWs.classList.toggle('wsShow');
+}
+
+let hideTextEmail_Icon = document.getElementById('hideTextEmail_Icon');
+
+let hideTextEmail = document.getElementById('hideTextEmail');
+
+hideTextEmail_Icon.addEventListener('click', toggleEmailText);
+
+function toggleEmailText() {
+    hideTextEmail.classList.toggle('emailShow');
 }
